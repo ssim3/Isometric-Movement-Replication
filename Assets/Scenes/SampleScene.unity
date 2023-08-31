@@ -776,6 +776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shiftForce: 15
   shiftTime: 0.25
+  cooldownTime: 0.3
 --- !u!4 &1666787561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2dd15067bd034564fa230ddd09d6dbf7, type: 3}
@@ -800,7 +801,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.88
+  m_Height: 1.73
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
