@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -8,36 +9,45 @@ using static UnityEngine.GraphicsBuffer;
 public class MovementScript : MonoBehaviour
 {
     [Header("Player")]
-    Rigidbody rb;
+    public CharacterController player;
+    public Vector3 moveDirection;
 
     [Header("Speed")]
     [SerializeField] float speed = 20f;
+    [SerializeField] float gravity = 20.0F;
 
-    [Header("Roation")]
+    [Header("Rotation")]
     [SerializeField] float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        player = GetComponent<CharacterController>();
     }
 
 
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-
-        if (direction.magnitude >= 0.1f)
+        if (player.isGrounded)
         {
-            float angle = LookAndSmooth(direction, turnSmoothVelocity, turnSmoothTime); // Get smoothed target angle
-            Vector3 skewedDirection = SkewDirection(direction); // Get skewed direction for isometric movement
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
 
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-            rb.MovePosition(transform.position + (skewedDirection * speed * Time.deltaTime)); // Moves the player to the skewed direction, and 
+            moveDirection = new Vector3(horizontal, 0, vertical).normalized;
+
+            if (moveDirection.magnitude >= 0.1f)
+            {
+                float angle = LookAndSmooth(moveDirection, turnSmoothVelocity, turnSmoothTime); // Get smoothed target angle
+                moveDirection = SkewDirection(moveDirection); // Get skewed direction for isometric movement
+
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            }
         }
+
+        moveDirection.y -= gravity * Time.deltaTime;
+        player.Move((moveDirection * speed * Time.deltaTime)); // Moves the player to the skewed direction
+
+
     }
 
     // Gets angle that we want to be facing, then smoothly interpolate between origin angle and target angle over time.
@@ -57,10 +67,9 @@ public class MovementScript : MonoBehaviour
     {
         // Figure out wtf this means
         var matrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
-        Vector3 skewedDirection = matrix.MultiplyPoint3x4(direction);
+        Vector3 skewedDirection = matrix.MultiplyPoint3x4(direction).normalized;
 
         return skewedDirection;
     }
-
 
 }

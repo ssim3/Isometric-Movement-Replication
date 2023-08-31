@@ -4,28 +4,35 @@ using UnityEngine;
 
 public class Shift : MonoBehaviour
 {
-    Rigidbody rb;
-
+    MovementScript moveScript;
+    
     [Header("Shift Force")]
     [SerializeField] float shiftForce = 10f;
-
+    [SerializeField] float shiftTime = 0.8f;
+    
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        moveScript = GetComponent<MovementScript>();
     }
-
+    
     
     void Update()
     {
-        ShiftPlayer();
-        Debug.Log(rb.velocity.magnitude);
-    }
-
-    void ShiftPlayer()
-    {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            rb.AddForce(transform.forward * shiftForce, ForceMode.Impulse);
+            StartCoroutine(DashCoroutine());
         }
+
     }
+
+
+    IEnumerator DashCoroutine()
+    {
+        float startTime = Time.time;
+        while (Time.time < startTime + shiftTime)
+        {
+            moveScript.player.Move(transform.forward * shiftForce * Time.deltaTime);
+            yield return null; 
+        }
+}
 }

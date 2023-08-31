@@ -16,7 +16,7 @@ public class FollowPlayer : MonoBehaviour
     {
         offset = transform.position - target.position;
     }
-    void FixedUpdate()
+    void Update()
     {
         var targetPosition = target.position + offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothTime);
