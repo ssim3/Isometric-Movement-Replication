@@ -47,7 +47,6 @@ public class MovementScript : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
         player.Move((moveDirection * speed * Time.deltaTime)); // Moves the player to the skewed direction
 
-
     }
 
     // Gets angle that we want to be facing, then smoothly interpolate between origin angle and target angle over time.

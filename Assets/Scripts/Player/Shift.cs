@@ -6,6 +6,8 @@ public class Shift : MonoBehaviour
 {
     MovementScript moveScript;
 
+    public bool isShift = false; // For animator
+
     [Header("Shift Force")]
     bool canShift = true;
     [SerializeField] float shiftForce = 10f;
@@ -32,6 +34,7 @@ public class Shift : MonoBehaviour
     // After dashing, an X second cooldown is placed
     IEnumerator DashCoroutine()
     {
+        isShift = true;
         canShift = false;
 
         float startTime = Time.time;
@@ -41,6 +44,8 @@ public class Shift : MonoBehaviour
             moveScript.player.Move(transform.forward * shiftForce * Time.deltaTime);
             yield return null;
         }
+
+        isShift = false;
 
         // After cooldown ends, player is able to dash again
         yield return new WaitForSeconds(cooldownTime);

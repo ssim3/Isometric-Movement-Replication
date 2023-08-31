@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Player\Shift.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimationScript.cs" />
     <Compile Include="Assets\Scripts\Player\MovementScript.cs" />
   </ItemGroup>
   <ItemGroup>
