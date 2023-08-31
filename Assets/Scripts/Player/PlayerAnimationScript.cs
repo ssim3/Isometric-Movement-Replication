@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PlayerAnimationScript : MonoBehaviour
 {
+    // Scripts
     public MovementScript movementScript;
     public Shift shift;
 
+    // Player Animator
     [SerializeField] Animator animator;
 
     private void Update()
     {
-        IsMoving(); // If Player is moving
-        IsDashing();
+        IsMoving(); // If Player is moving, play running animation
+        IsDashing(); // If Player is dashing, play dash animation
     }
 
     private void IsMoving()
