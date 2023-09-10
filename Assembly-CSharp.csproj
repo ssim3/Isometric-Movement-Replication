@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Player\Shift.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationScript.cs" />
+    <Compile Include="Assets\Scripts\Player\AttackWorld.cs" />
     <Compile Include="Assets\Scripts\Player\MovementScript.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -13,7 +13,7 @@ public class MovementScript : MonoBehaviour
     public Vector3 moveDirection;
 
     [Header("Speed")]
-    [SerializeField] float speed = 20f;
+    public float speed = 20f;
     [SerializeField] float gravity = 20.0F;
 
     [Header("Rotation")]
@@ -43,10 +43,13 @@ public class MovementScript : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
             }
         }
-
-        moveDirection.y -= gravity * Time.deltaTime;
+        else
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+        }
+        
         player.Move((moveDirection * speed * Time.deltaTime)); // Moves the player to the skewed direction
-
+        Debug.Log(moveDirection.magnitude);
     }
 
     // Gets angle that we want to be facing, then smoothly interpolate between origin angle and target angle over time.

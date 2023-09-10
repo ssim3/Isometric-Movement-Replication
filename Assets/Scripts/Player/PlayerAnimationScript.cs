@@ -7,6 +7,7 @@ public class PlayerAnimationScript : MonoBehaviour
     // Scripts
     public MovementScript movementScript;
     public Shift shift;
+    public AttackWorld attackWorld;
 
     // Player Animator
     [SerializeField] Animator animator;
@@ -15,6 +16,7 @@ public class PlayerAnimationScript : MonoBehaviour
     {
         IsMoving(); // If Player is moving, play running animation
         IsDashing(); // If Player is dashing, play dash animation
+        IsAttacking();
     }
 
     private void IsMoving()
@@ -31,7 +33,12 @@ public class PlayerAnimationScript : MonoBehaviour
 
     private void IsDashing()
     {
-        Debug.Log(shift.isShift);
         animator.SetBool("isDash", shift.isShift);
+    }
+
+    private void IsAttacking()
+    {
+        animator.SetBool("isAttack", attackWorld.isAttacking);
+        animator.SetBool("isLeft", attackWorld.isLeft);
     }
 }
