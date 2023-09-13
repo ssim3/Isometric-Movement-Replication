@@ -200,25 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 7c3a3aff4a30f8d4d9c2067896da612c, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!1 &470800122
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +530,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ba202f1ab74fe445a39629c60f272ee, type: 3}
+  m_Script: {fileID: 11500000, guid: d8eed0c521916cf44b325de13f872f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1666787561}
@@ -917,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 7833114641849259454, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7e04ece7ccfd1f34586dc1ecd9943bc8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4c300db59b4899e45b4302c64c4e7cfb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -930,13 +911,13 @@ PrefabInstance:
       addedObject: {fileID: 1666787556}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1666787560}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1666787565}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666787564}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666787560}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666787563}
@@ -955,14 +936,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666787555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e57e90567e226746a4699bf616e1535, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e2f9c12e58885649836be00241d00e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  moveDirection: {x: 0, y: 0, z: 0}
-  speed: 10
-  gravity: 9.81
-  turnSmoothTime: 0.03
+  isAttacking: 0
+  movementScript: {fileID: 1666787564}
+  isLeft: 0
 --- !u!114 &1666787560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,13 +951,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666787555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75758f6f93f082040a3b3e8525f91851, type: 3}
+  m_Script: {fileID: 11500000, guid: 844166a10510e6645ab5c3c22230a07a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isShift: 0
-  shiftForce: 20
-  shiftTime: 0.25
-  cooldownTime: 0.1
+  movementScript: {fileID: 1666787564}
+  shift: {fileID: 1666787565}
+  attackWorld: {fileID: 1666787556}
+  animator: {fileID: 1666787563}
 --- !u!4 &1666787561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 814fc79b8c1bd6742aaa15a4aa0816bf, type: 3}
@@ -1020,7 +999,7 @@ Animator:
   m_GameObject: {fileID: 1666787555}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7abfe215c66c83f41bc98597045b8c48, type: 2}
+  m_Controller: {fileID: 9100000, guid: 479c72954b112e648ba19dc6f26c9fbd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1041,13 +1020,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666787555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb85e8f8dca49ee4aa6e96dcda126d55, type: 3}
+  m_Script: {fileID: 11500000, guid: c24cadeff14bf654fac655344c2003c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementScript: {fileID: 1666787556}
-  shift: {fileID: 1666787560}
-  attackWorld: {fileID: 1666787565}
-  animator: {fileID: 1666787563}
+  player: {fileID: 1666787562}
+  moveDirection: {x: 0, y: 0, z: 0}
+  speed: 20
+  gravity: 20
+  turnSmoothTime: 0.005
 --- !u!114 &1666787565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,11 +1037,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666787555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cccbceac6cfafa44b226ab21243cea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fd19c46903866a4983129e854fd6f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAttacking: 1
-  movementScript: {fileID: 1666787556}
+  isShift: 0
+  shiftForce: 8
+  shiftTime: 0.5
+  cooldownTime: 0.2
 --- !u!1 &1712197412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,17 +1277,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824883783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52cc71204537fe48913a83236e408cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f6f454f511a10148890d93391b42e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1824883788}
-  targets:
-  - {fileID: 470800123}
-  - {fileID: 1053335309}
-  - {fileID: 1301604349}
-  - {fileID: 418450371}
-  - {fileID: 1712197413}
-  - {fileID: 532282877}
+  targets: []
   waitTime: 3
 --- !u!95 &1824883788
 Animator:
