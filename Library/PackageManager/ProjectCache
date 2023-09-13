@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638293441109910548
-    m_Hash: 4245544727
+      ticks: 638301814259208747
+    m_Hash: 318596544
   m_LockFileStatus:
     m_FilePath: C:/Users/Tristan Sim/Isometric-RPG/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638293441109969912
-    m_Hash: 227462783
+      ticks: 638301814259279438
+    m_Hash: 1123444063
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -189,11 +189,13 @@ m_ResolvedPackages:
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
     compatible:
     - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
     recommended: 2.0.7
     deprecated: []
   dependencies: []
@@ -353,6 +355,342 @@ m_ResolvedPackages:
     hash: 
     revision: 
   upmReserved: '{"quickstart":"https://docs.unity3d.com/2021.2/Documentation/Manual/DeveloperToolsFeature.html"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.remote-config@3.3.2
+  testable: 0
+  isDirectDependency: 1
+  version: 3.3.2
+  source: 1
+  resolvedPath: C:\Users\Tristan Sim\Isometric-RPG\Library\PackageCache\com.unity.remote-config@3.3.2
+  assetPath: Packages/com.unity.remote-config
+  name: com.unity.remote-config
+  displayName: Remote Config
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: "Remote Config is a cloud service that lets you tune and customize
+    your app over the air without requiring an update to your game.  You can use
+    rules to enable or disable features, change the difficulty of your game or run
+    special events to target specific audiences.  Campaigns control when updates
+    are applied and to whom, while Unity manages delivery of your game content with
+    minimal performance impact. \n\nRemote Config can be configured via the editor
+    or through our public API\u2019s.  Functionality includes: \n- Release new features
+    without deploying code:\n   - Feature flagging\n   - Staged Rollouts\n   - Kill
+    switch functionality\n   - Start & End Date\n   - Enable & disable rules\n- Personalized
+    real-time segmentation with custom attributes\n   - Custom conditions for applying
+    setting variants\n   - Device, user, game and other arbitrary attributes supporting\n-
+    Reporting\n   - Tracing ID for decorating analytics events"
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.3.0-preview.4
+    - 0.3.1-preview.2
+    - 0.3.2-preview
+    - 1.0.0-preview
+    - 1.0.4-preview.2
+    - 1.0.5-preview
+    - 1.0.6-preview
+    - 1.0.6
+    - 1.0.7-preview
+    - 1.0.8-preview
+    - 1.0.8-preview.1
+    - 1.0.8
+    - 1.0.9-preview
+    - 1.0.9-preview.1
+    - 1.0.9
+    - 1.0.10-preview.1
+    - 1.1.0-preview
+    - 1.1.0-preview.1
+    - 1.1.0-preview.2
+    - 1.1.0-preview.3
+    - 1.1.0-preview.4
+    - 1.2.0-preview
+    - 1.2.0-preview.1
+    - 1.2.0-preview.2
+    - 1.2.0-preview.3
+    - 1.2.0-preview.4
+    - 1.2.0-preview.5
+    - 1.2.1-preview
+    - 1.2.1
+    - 1.2.2-preview.1
+    - 1.2.2
+    - 1.2.3-preview.1
+    - 1.2.3-preview.2
+    - 1.2.3
+    - 1.2.4-preview.2
+    - 1.2.4-preview.3
+    - 1.2.4-preview.4
+    - 1.3.0-preview.1
+    - 1.3.0-preview.2
+    - 1.3.1-preview.1
+    - 1.3.1-preview.2
+    - 1.3.1-preview.3
+    - 1.3.1-preview.4
+    - 1.3.2-preview.1
+    - 1.3.2-preview.2
+    - 1.3.2-preview.3
+    - 1.3.2-preview.4
+    - 1.3.2-preview.5
+    - 1.3.2-preview.6
+    - 1.3.2-preview.7
+    - 1.3.2-preview.8
+    - 1.3.2-preview.9
+    - 1.3.2-preview.10
+    - 1.4.0-preview.1
+    - 1.4.0-preview.2
+    - 1.4.0-preview.3
+    - 1.4.0-preview.4
+    - 1.4.0-preview.5
+    - 1.4.0-preview.6
+    - 1.4.0-preview.7
+    - 1.4.0-preview.8
+    - 1.4.0
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2-exp.1
+    - 2.1.0-exp.1
+    - 2.1.0-exp.2
+    - 2.1.1-exp.1
+    - 2.1.1-exp.2
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3-exp.1
+    - 2.1.3-exp.2
+    - 2.1.3-exp.3
+    - 2.1.3-exp.4
+    - 2.1.3-exp.6
+    - 2.1.3-exp.7
+    - 2.1.3-exp.8
+    - 2.1.3-exp.9
+    - 2.1.3-exp.10
+    - 2.1.3-exp.11
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.0-pre.10
+    - 3.0.0-pre.11
+    - 3.0.0-pre.12
+    - 3.0.0-pre.13
+    - 3.0.0-pre.14
+    - 3.0.0-pre.15
+    - 3.0.0
+    - 3.1.0
+    - 3.1.3
+    - 3.2.2
+    - 3.3.1
+    - 3.3.2
+    compatible:
+    - 3.3.2
+    recommended: 3.3.2
+    deprecated: []
+  dependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.remote-config-runtime
+    version: 3.1.3
+  resolvedDependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.remote-config-runtime
+    version: 3.1.3
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.11.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.services.authentication
+    version: 2.7.2
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - remote
+  - config
+  - configuration
+  - settings
+  - remote settings
+  - remote config
+  - firebase
+  - staged rollouts
+  - feature flagging
+  - roll-out
+  - adapt
+  - tune
+  - tailor
+  - test
+  - experiment
+  - experimentation
+  - app update
+  - target
+  - targeting
+  - segment
+  - segmentation
+  - segmenting
+  - override
+  - rules
+  - variants
+  - variation
+  - parameter
+  - conditions
+  - conditional
+  - continuous delivery
+  - deploy
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638194783490000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.remote-config@3.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.remote-config.git
+    revision: 73fcb662d8f3752356bf580b82c33311d1f5b892
+    path: 
+  unityLifecycle:
+    version: 3.3.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"gameService":{"genericDashboardUrl":"https://dashboard.unity3d.com/remote-config","projectDashboardUrl":"https://dashboard.unity3d.com/organizations/{0}/projects/{1}/settings/general","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"},"changelog":"Changed\n-
+    Updated implementation docs and ExampleSample.cs\n- Updated general support link
+    in the docs\n\nFixed\n- Deployable assets (.rc) not appearing on load in the
+    Deployment Window with Unity 2022+.\n- Fixed deployment error message showing
+    twice when duplicate keys are detected in different .rc file\n- Compile warning
+    was fixed"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.services.cloudsave@2.2.1
+  testable: 0
+  isDirectDependency: 1
+  version: 2.2.1
+  source: 1
+  resolvedPath: C:\Users\Tristan Sim\Isometric-RPG\Library\PackageCache\com.unity.services.cloudsave@2.2.1
+  assetPath: Packages/com.unity.services.cloudsave
+  name: com.unity.services.cloudsave
+  displayName: Cloud Save
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: "Build better player experiences with seamless game data stored securely
+    in the cloud.\n\nUse Cloud Save to store your players\u2019 progress and preferences,
+    by doing so you can share this data between all the players\u2019 devices and
+    any game backend services."
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 2.0.0-pre.2
+    - 2.0.0
+    - 2.0.1
+    - 2.2.1
+    compatible:
+    - 2.2.1
+    recommended: 2.2.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.services.authentication
+    version: 2.2.0
+  - name: com.unity.services.core
+    version: 1.4.0
+  resolvedDependencies:
+  - name: com.unity.services.authentication
+    version: 2.7.2
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.services.core
+    version: 1.11.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638246037200000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.cloudsave@2.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+    revision: c0389ba82d939156b88dddb36c4be5cd48055eb8
+    path: 
+  unityLifecycle:
+    version: 2.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"gameService":{"projectDashboardUrl":"https://dashboard.unity3d.com/organizations/{0}/projects/{1}/cloud-save/about","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"},"supportedPlatforms":["Android","iOS","Linux","Mac","PC","Windows
+    8 Universal","Windows 10 Universal"],"changelog":"* Cloud Save Files support,
+    including write lock support for all appropriate methods.\n  * ListAllAsync lists
+    all files belonging to the signed in player with metadata\n  * GetMetadataAsync
+    returns the metadata for a given file\n  * SaveAsync will upload a given file
+    to Cloud Save Files storage for the player, supports either a Stream or a byte[]\n 
+    * LoadStreamAsync will download a given file from Cloud Save Files storage for
+    the player, and returns a Stream object containing the file data\n  * LoadBytesAsync
+    will download a given file from Cloud Save Files storage for the player, and
+    returns a byte[] object containing the file data"}'
   assetStore:
     productId: 
 - packageId: com.unity.textmeshpro@3.0.6
@@ -3054,6 +3392,400 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
+- packageId: com.unity.services.authentication@2.7.2
+  testable: 0
+  isDirectDependency: 0
+  version: 2.7.2
+  source: 1
+  resolvedPath: C:\Users\Tristan Sim\Isometric-RPG\Library\PackageCache\com.unity.services.authentication@2.7.2
+  assetPath: Packages/com.unity.services.authentication
+  name: com.unity.services.authentication
+  displayName: Authentication
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Client SDK offering player identity management for Unity Gaming Services.
+
+
+    Identity
+    providers can be configured from the editor or the Unity Dashboard.
+
+
+    Player
+    management is available in the Unity Dashboard.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-pre.4
+    - 1.0.0-pre.6
+    - 1.0.0-pre.37
+    - 2.0.0
+    - 2.1.1
+    - 2.2.0
+    - 2.3.1
+    - 2.4.0
+    - 2.5.0-pre.3
+    - 2.5.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    - 3.0.0
+    compatible:
+    - 2.7.2
+    - 3.0.0
+    recommended: 2.7.2
+    deprecated: []
+  dependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.services.core
+    version: 1.10.1
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.services.core
+    version: 1.11.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638259959460000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+    revision: 27cfcca47ddb40b3c45c37522a674c062ee4a43f
+    path: 
+  unityLifecycle:
+    version: 2.7.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"gameService":{"genericDashboardUrl":"https://dashboard.unity3d.com/player-authentication","projectDashboardUrl":"https://dashboard.unity3d.com/organizations/{0}/projects/{1}/player-authentication/about","projectDashboardUrlType":"OrganizationKeyAndProjectGuid","configurePath":"Project/Services/Authentication"},"supportedPlatforms":["Android","iOS","Linux","Mac","PC","WebGL","Windows
+    8 Universal","Windows 10 Universal"],"changelog":"### Added\n- Added `SignInWithSteamAsync`
+    and `LinkWithSteamAsync` methods with `identity` parameter for better security.\n-
+    Added `SignInWithUsernamePasswordAsync`, `SignUpWithUsernamePasswordAsync`, `AddUsernamePasswordAsync`,
+    `UpdatePasswordAsync`\n### Changed\n- Marked previous versions of `SignInWithSteamAsync`
+    and `LinkWithSteamAsync` methods as obsolete."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.services.core@1.11.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.11.0
+  source: 1
+  resolvedPath: C:\Users\Tristan Sim\Isometric-RPG\Library\PackageCache\com.unity.services.core@1.11.0
+  assetPath: Packages/com.unity.services.core
+  name: com.unity.services.core
+  displayName: Services Core
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'This package defines common components used by multiple Game Service
+    packages.
+
+    These are standardized and aim to unify the overall experience
+    of working with Game Services SDK.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.11.0
+    compatible:
+    - 1.11.0
+    recommended: 1.11.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.11/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+    revision: dd29ee68b03935e05ea9551c5cf1e9c5ec83d939
+    path: 
+  unityLifecycle:
+    version: 1.11.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n\n- Adding `IServerAccessToken` and `IServerEnvironmentId`
+    components for packages that want to support running operations in the context
+    of a server.\n- Adding `IAccessTokenObserver` component for packages to be notified
+    of changes to the `IAccessToken` value.\n\n### Fixed\n- Implement JsonConverters
+    to prevent NotImplementedException when converters are invoked by reflection"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
+  testable: 0
+  isDirectDependency: 0
+  version: 3.2.1
+  source: 1
+  resolvedPath: C:\Users\Tristan Sim\Isometric-RPG\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.2.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 3.2.1
+    compatible:
+    - 3.2.1
+    recommended: 3.2.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
+    path: 
+  unityLifecycle:
+    version: 3.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"* Fixed Newtonsoft DLL when compiling with netstandard
+    2.0."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.remote-config-runtime@3.1.3
+  testable: 0
+  isDirectDependency: 0
+  version: 3.1.3
+  source: 1
+  resolvedPath: C:\Users\Tristan Sim\Isometric-RPG\Library\PackageCache\com.unity.remote-config-runtime@3.1.3
+  assetPath: Packages/com.unity.remote-config-runtime
+  name: com.unity.remote-config-runtime
+  displayName: Remote Config Runtime
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Remote Config is a cloud service that lets you tune and customize
+    your app over the air without requiring an update to your game.  This package
+    is intended to be inherited as a dependency, and should not be directly installed,
+    by end users. Unity Developers that want to implement Unity Remote Config in
+    their game/application, should use the Remote Config Package `com.unity.remote-config`
+    rather than this package directly.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 3.1.3
+    compatible:
+    - 3.1.3
+    recommended: 3.1.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.4.0
+  - name: com.unity.services.authentication
+    version: 2.0.0
+  resolvedDependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.11.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.services.authentication
+    version: 2.7.2
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - remote
+  - config
+  - configuration
+  - settings
+  - remote settings
+  - remote config
+  - firebase
+  - staged rollouts
+  - feature flagging
+  - roll-out
+  - adapt
+  - tune
+  - tailor
+  - test
+  - experiment
+  - experimentation
+  - app update
+  - target
+  - targeting
+  - segment
+  - segmentation
+  - segmenting
+  - override
+  - rules
+  - variants
+  - variation
+  - parameter
+  - conditions
+  - conditional
+  - continuous delivery
+  - deploy
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.remote-config-runtime.git
+    revision: 91b2d12b27935e9c9b1a488069ac9dc6945b8bfc
+    path: 
+  unityLifecycle:
+    version: 3.1.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"- using ENABLE_CLOUD_SERVICES_ANALYTICS flag for platforms
+    using Analytics within 2.x namespace"}'
+  assetStore:
+    productId: 
 - packageId: com.unity.ide.visualstudio@2.0.18
   testable: 0
   isDirectDependency: 0
@@ -3098,10 +3830,12 @@ m_ResolvedPackages:
     - 2.0.17
     - 2.0.18
     - 2.0.20
+    - 2.0.21
     compatible:
     - 2.0.18
     - 2.0.20
-    recommended: 2.0.20
+    - 2.0.21
+    recommended: 2.0.21
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -3212,9 +3946,11 @@ m_ResolvedPackages:
     - 3.0.21
     - 3.0.22
     - 3.0.24
+    - 3.0.25
     compatible:
     - 3.0.24
-    recommended: 3.0.24
+    - 3.0.25
+    recommended: 3.0.25
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
